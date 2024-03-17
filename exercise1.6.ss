@@ -1,6 +1,6 @@
 (define (new-if predicate then-clause else-clause) 
 (cond (predicate then-clause) (else else-clause)))
-;  (display (new-if (= 2 3) 0 5))
+ (display (new-if (= 2 3) 0 5))
 
 (define (good-enough? guess x) (< (abs (- (square guess) x)) 0.001))
 (define (improve guess x) (average guess (/ x guess)))
