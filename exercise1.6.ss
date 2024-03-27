@@ -12,6 +12,8 @@
             guess
             (sqrt-iter (improve guess x)
                         x)))
-(display (sqrt-iter 1.0 5)) ;new-if会导致无限递归，不会有结果输出
+(display (sqrt-iter 1.0 5)) 
+;new-if是函数调用，会要求每个形参都先求出值再进入函数体
+;所以new-if会导致无限递归，不会有结果输出
 ; 用if就可以正常输出结果
 
